@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #8D0004;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditMenuController">
+   <children>
+      <TextField fx:id="orderName" layoutX="282.0" layoutY="30.0" style="-fx-background-color: #F70002;" />
+      <TextField fx:id="cdValue" layoutX="282.0" layoutY="73.0" style="-fx-background-color: #F70002;" />
+      <TextField fx:id="price" layoutX="282.0" layoutY="125.0" style="-fx-background-color: #F70002;" />
+      <RadioButton fx:id="starterButton" layoutX="85.0" layoutY="263.0" mnemonicParsing="false" onAction="#orderTypeBtnChanged" text="Starter" textFill="#f6ff00" />
+      <RadioButton fx:id="mainCourseButton" layoutX="202.0" layoutY="263.0" mnemonicParsing="false" onAction="#orderTypeBtnChanged" text="Main Course" textFill="#f6ff00" />
+      <RadioButton fx:id="desertButton" layoutX="350.0" layoutY="263.0" mnemonicParsing="false" onAction="#orderTypeBtnChanged" text="Desert" textFill="#f6ff00" />
+      <Button fx:id="addOrderButton" layoutX="85.0" layoutY="328.0" mnemonicParsing="false" onAction="#addFoodItem" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #5C0000;" text="Add" textFill="#f6ff00" />
+      <Button fx:id="exitButton" layoutX="414.0" layoutY="335.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: #5C0000;" text="Exit" textFill="#f6ff00" />
+      <CheckBox fx:id="glutenFreeBox" layoutX="121.0" layoutY="179.0" mnemonicParsing="false" onAction="#isGlutenFree" text="Gluten Free" textFill="#f2ff00">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="nutFreeCheckBox" layoutX="298.0" layoutY="179.0" mnemonicParsing="false" onAction="#isNutFree" text="Nut Free" textFill="#f2ff00">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></CheckBox>
+      <Label layoutX="121.0" layoutY="30.0" prefHeight="31.0" prefWidth="144.0" text="Name" textFill="#f6ff00">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="73.0" prefHeight="31.0" prefWidth="144.0" text="Price" textFill="#f6ff00">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="125.0" prefHeight="31.0" prefWidth="144.0" text="CF Value" textFill="#f6ff00">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="drinkButton" layoutX="445.0" layoutY="263.0" mnemonicParsing="false" onAction="#orderTypeBtnChanged" text="Drink" textFill="#e1ff00" />
+   </children>
+</AnchorPane>

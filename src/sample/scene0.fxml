@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="464.0" prefWidth="661.0" style="-fx-background-color: #6E0400;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller0">
+   <children>
+      <Label layoutX="172.0" layoutY="144.0" prefHeight="28.0" prefWidth="166.0" text="Table Number" textFill="#f2ff00">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Label>
+      <Label layoutX="172.0" layoutY="217.0" prefHeight="28.0" prefWidth="176.0" text="Number Of Dinners" textFill="#eaf208">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Label>
+      <TextField fx:id="tableNo" layoutX="368.0" layoutY="142.0" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: #FC0002;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="noOfDinners" layoutX="369.0" layoutY="217.0" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: #FC0002;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <Button fx:id="registerBtn" layoutX="389.0" layoutY="297.0" mnemonicParsing="false" onAction="#goToCustomerDetails" prefHeight="31.0" prefWidth="117.0" style="-fx-background-color: #3D0000;" text="Book a table" textFill="#f1f50a" />
+      <HBox prefHeight="109.0" prefWidth="661.0" style="-fx-background-color: #3D0000;">
+         <children>
+            <Text fill="#e8dd0e" strokeType="OUTSIDE" strokeWidth="0.0" text="BONA" wrappingWidth="175.6708984375">
+               <font>
+                  <Font name="System Bold" size="54.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="55.0" right="5.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+            <ImageView fitHeight="108.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/logo/logo.PNG" />
+               </image>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <Text fill="#f8f006" strokeType="OUTSIDE" strokeWidth="0.0" text="FIDE" wrappingWidth="213.6708984375">
+               <font>
+                  <Font name="System Bold" size="52.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="50.0" right="5.0" top="12.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <Text fill="#d9f200" layoutX="217.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter a Table No. from 1 to 10" wrappingWidth="226.0000027678907" />
+      <Text fill="#f6ff00" layoutX="231.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum No. of Dinnes are 5" wrappingWidth="198.0000034980476" />
+   </children>
+</AnchorPane>
